@@ -38,11 +38,11 @@ const pluginConfig = isProd ? pluginProd : pluginDev;
 
 
 const outputDev = {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'js/bundle.js'
 };
 const outputProd = {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'js/bundle.[contenthash].js'
 };
 const outputConfig = isProd ? outputProd : outputDev;
@@ -106,7 +106,7 @@ module.exports = {
         ],
       },
       devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'build'),
         compress: true,
         port: 9000
       },
