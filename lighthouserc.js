@@ -4,7 +4,7 @@ module.exports = {
             /* Add configuration here */
 			numberOfRuns: 3,
             startServerCommand: 'npm run start',
-            url: ['http://localhost:9000']
+            url: ['https://airbnb-react-scratch.web.app']
 		},
 		// assert: {
 		// 	assertions: {
