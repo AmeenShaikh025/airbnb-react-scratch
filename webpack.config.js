@@ -39,11 +39,13 @@ const pluginConfig = isProd ? pluginProd : pluginDev;
 
 const outputDev = {
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/bundle.js'
+    filename: 'js/bundle.js',
+    publicPath: '/'
 };
 const outputProd = {
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/bundle.[contenthash].js'
+    filename: 'js/bundle.[contenthash].js',
+    publicPath: '/'
 };
 const outputConfig = isProd ? outputProd : outputDev;
 
@@ -113,6 +115,9 @@ module.exports = {
           // `...`
           new CssMinimizerPlugin(),
         ],
+      },
+      devServer: {
+        historyApiFallback: true,
       },
     //   devServer: {
     //     contentBase: path.join(__dirname, 'build'),
