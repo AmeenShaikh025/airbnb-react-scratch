@@ -60,22 +60,28 @@ const optimizeConfig = isProd ? optimizeProd : null;
 
 module.exports = {
     mode: mode,
-    entry: './src/index.js',
+    entry: './src/index.tsx',
+    devtool: 'inline-source-map',
     output: outputConfig,
     plugins: pluginConfig,
     module: {
         rules: [
-            { 
-                test: /\.(js)$/i, 
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                   loader: 'babel-loader',
-                   options: {
-                       presets: ['@babel/preset-env']
-                   }
-                }
+            // { 
+            //     test: /\.(js)$/i, 
+            //     exclude: /(node_modules|bower_components)/,
+            //     use: {
+            //        loader: 'babel-loader',
+            //        options: {
+            //            presets: ['@babel/preset-env']
+            //        }
+            //     }
+            // },
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
             },
-            { 
+            {
                 test: /\.css$/i, 
                 use: cssConfig 
             },
@@ -97,6 +103,9 @@ module.exports = {
 
         ]
     },
+    resolve: {
+        extensions: [ '.tsx', '.ts', '.js' ],
+    },
     optimization: {
         minimize: true,
         minimizer: [
@@ -105,9 +114,9 @@ module.exports = {
           new CssMinimizerPlugin(),
         ],
       },
-      devServer: {
-        contentBase: path.join(__dirname, 'build'),
-        compress: true,
-        port: 9000
-      },
+    //   devServer: {
+    //     contentBase: path.join(__dirname, 'build'),
+    //     compress: true,
+    //     port: 9000
+    //   },
 }
