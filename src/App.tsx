@@ -1,19 +1,30 @@
-import React from 'react'
+import React , {Suspense, lazy} from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-const banner =  require("./assets/banner.jpg")
+import LoadingScreen from './LoadingScreen';
+// const banner =  require("./assets/banner.jpg")
 
-const App: React.FC = () =>  {
+const Home = lazy(() => import("./Home"));
+const Explore = lazy(() => import("./Explore"));
+const NotFound = lazy(() => import("./NotFound"));
+
+const App = () =>  {
     return (
-        <div>
-            <h2>React app </h2>
-            <img src={banner} width="100%" alt="banner image"/>
-        </div>
+        <main>
+            <Suspense fallback={<LoadingScreen />}>
+                <Switch>
+                    <Route path="/" component={Home} exact />
+                    <Route path="/explore" component={Explore} />
+                    <Route component={NotFound} />
+                </Switch>
+            </Suspense>
+        </main>
     )
 }
 
 export default App
 
 
-export function sum(a:number, b:number): number {
-    return a + b;
-}
+// export function sum(a:number, b:number): number {
+//     return a + b;
+// }

@@ -8,7 +8,7 @@
       "strict": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
-      "module": "es6",
+      "module": "esnext",
       "target": "es6",
       "jsx": "react",
       "noEmit": false,

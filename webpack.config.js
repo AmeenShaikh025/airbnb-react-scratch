@@ -19,6 +19,7 @@ const pluginDev = [
         template: 'src/index.html'
     })
 ];
+
 const pluginProd = [
     new HtmlWebpackPlugin({
         filename: 'index.html',
@@ -39,11 +40,13 @@ const pluginConfig = isProd ? pluginProd : pluginDev;
 
 const outputDev = {
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/bundle.js'
+    filename: 'js/bundle.js',
+    publicPath: '/'
 };
 const outputProd = {
     path: path.resolve(__dirname, 'build'),
-    filename: 'js/bundle.[contenthash].js'
+    filename: 'js/bundle.[contenthash].js',
+    publicPath: '/'
 };
 const outputConfig = isProd ? outputProd : outputDev;
 
@@ -88,6 +91,12 @@ module.exports = {
             {
                 test: /\.html$/i,
                 use: ['html-loader']
+                // use: {
+                //     loader: "file-loader",
+                //     options: {
+                //         name: '[name].[ext]'
+                //     }
+                // }
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
@@ -113,6 +122,9 @@ module.exports = {
           // `...`
           new CssMinimizerPlugin(),
         ],
+      },
+      devServer: {
+        historyApiFallback: true,
       },
     //   devServer: {
     //     contentBase: path.join(__dirname, 'build'),

@@ -1,5 +1,5 @@
-import {sum} from "./App";
+// import {sum} from "./App";
 
-test("property adds two numbers", () => {
-    expect(sum(1, 2)).toBe(3)
-})
+// test("property adds two numbers", () => {
+//     expect(sum(1, 2)).toBe(3)
+// })
