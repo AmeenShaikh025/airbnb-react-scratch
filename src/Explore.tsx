@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Explore:React.FC = () => {
+const Explore = () => {
     return (
         <div>
             <h2>Explore page</h2>

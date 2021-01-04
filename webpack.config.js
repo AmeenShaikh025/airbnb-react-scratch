@@ -19,6 +19,7 @@ const pluginDev = [
         template: 'src/index.html'
     })
 ];
+
 const pluginProd = [
     new HtmlWebpackPlugin({
         filename: 'index.html',
@@ -90,6 +91,12 @@ module.exports = {
             {
                 test: /\.html$/i,
                 use: ['html-loader']
+                // use: {
+                //     loader: "file-loader",
+                //     options: {
+                //         name: '[name].[ext]'
+                //     }
+                // }
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,

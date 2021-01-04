@@ -1,15 +1,14 @@
 import React , {Suspense, lazy} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import LoadingScreen from './screens/LoadingScreen';
-import "./App.css";
+import LoadingScreen from './LoadingScreen';
 // const banner =  require("./assets/banner.jpg")
 
-const Home = lazy(() => import("./screens/Home"));
-const Explore = lazy(() => import("./screens/Explore"));
-const NotFound = lazy(() => import("./screens/NotFound"));
+const Home = lazy(() => import("./Home"));
+const Explore = lazy(() => import("./Explore"));
+const NotFound = lazy(() => import("./NotFound"));
 
-const App: React.FC = () =>  {
+const App = () =>  {
     return (
         <main>
             <Suspense fallback={<LoadingScreen />}>
@@ -26,6 +25,6 @@ const App: React.FC = () =>  {
 export default App
 
 
-export function sum(a:number, b:number): number {
-    return a + b;
-}
+// export function sum(a:number, b:number): number {
+//     return a + b;
+// }

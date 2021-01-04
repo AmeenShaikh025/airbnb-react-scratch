@@ -1,8 +1,7 @@
 import React from 'react'
 
-import "./LoadingScreen.css";
 
-const LoadingScreen:React.FC = () => {
+const LoadingScreen = () => {
     return (
         <>
             <h2>Loading....</h2>
