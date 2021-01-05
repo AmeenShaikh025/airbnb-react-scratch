@@ -99,7 +99,7 @@ module.exports = {
                 // }
             },
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg|svg)$/i,
+                test: /\.(?:ico|gif|png|jpg|jpeg|svg|ttf)$/i,
                 use: {
                     loader: "file-loader",
                     options: {
