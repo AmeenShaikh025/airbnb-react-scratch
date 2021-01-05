@@ -1,0 +1,81 @@
+/* Meet Online */
+
+.meet {
+	/* background-color: var(--black); */
+	background-color: #000000;
+}
+.meet .meet__header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.meet .meet__header > div:nth-of-type(1) {
+	flex: 2;
+}
+.meet .meet__header > div:nth-of-type(2) {
+	flex: 1;
+}
+.meet .meet__header .meet__header__content h2 {
+	font-size: 3.3rem;
+}
+.meet .meet__header .meet__header__content p {
+	font-size: 1.8rem;
+}
+.meet .meet__header .meet__header__content h2,
+.meet .meet__header .meet__header__content p {
+	color: var(--white);
+}
+.meet .meet__header button {
+	transition: all ease-in 0.3s;
+}
+.meet .meet__header button svg {
+	width: 15px;
+	height: 15px;
+	object-fit: contain;
+	vertical-align: top;
+	transition: all ease-in 0.4s;
+}
+.meet .meet__header button svg path {
+	/* fill: var(--white); */
+	fill: #ffffff;
+}
+.meet .meet__header button:hover svg {
+	transform: translateX(3px);
+}
+.meet .row {
+	align-items: stretch;
+}
+.meet .row .col6 {
+	position: relative;
+}
+.meet img {
+	object-fit: contain;
+	border-radius: 1.2rem;
+	width: 96%;
+	cursor: pointer;
+}
+.meet .meet__content {
+	position: absolute;
+	/* color: var(--white); */
+	color: #ffffff;
+	cursor: pointer;
+}
+.meet .meet__content div {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+.meet .row .col6:nth-of-type(2) .col6 .meet__content {
+	bottom: 0.8rem;
+	left: 0.6rem;
+	width: 85%;
+}
+.meet .row .col6:nth-of-type(1) .meet__content,
+.meet .row .col6:nth-of-type(2) .col12 .meet__content {
+	bottom: 0.7rem;
+	left: 1.6rem;
+	width: 50%;
+}
+.meet .row .col6:nth-of-type(2) .col6 {
+	margin-bottom: 1.2rem;
+}
+/* Meet Online */

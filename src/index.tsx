@@ -5,5 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import App from "./App"
 import './Fonts.css';
 import "./index.css"
+import "./Responsive.css"
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));

@@ -1,0 +1,27 @@
+/* Banner */
+.banner {
+	background-image: url("./assets/img/home/2ce67edf-49f9-4666-9c51-94419a9b7e6a.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1; */
+}
+.banner__content {
+	position: relative;
+	top: 70%;
+	left: 8%;
+	transform: translateY(-70%);
+	width: 300px;
+}
+.banner__content h1 {
+	font-size: 10rem;
+	font-weight: bold;
+	line-height: 1;
+	color: #ffffff;
+}
+/* Banner */

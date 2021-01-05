@@ -1,0 +1,243 @@
+/* Media Queries */
+@media (max-width: 1200px) {
+	.meet .meet__content div {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.meet .meet__content div {
+		font-size: 1rem;
+	}
+}
+@media (max-width: 768px) {
+	.explore .popular__places .col4 {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+}
+@media (max-width: 767px) {
+	.d-md-none {
+		display: none;
+	}
+	.explore .col7 {
+		order: 2;
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.explore .col5 {
+		max-width: 100%;
+		flex: 0 0 100%;
+		order: 1;
+	}
+	.explore .explore__card .col4,
+	.explore .popular__places .col4 {
+		max-width: 50%;
+		flex: 0 0 50%;
+	}
+	footer .col3 {
+		max-width: 50%;
+		flex: 0 0 50%;
+		margin-bottom: 1.5rem;
+	}
+	.places .container-fluid .row,
+	.card__section .row,
+	.explore .explore__card,
+	.explore .popular__places {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		overflow: overlay;
+		white-space: nowrap;
+		scroll-snap-type: x mandatory;
+		scroll-padding: 30%;
+	}
+	.places .container-fluid .col3,
+	.card__section .row .col3,
+	.explore .explore__card .col4,
+	.explore .popular__places .col4 {
+		max-width: 40%;
+		flex: 0 0 40%;
+		scroll-snap-align: start;
+	}
+	.meet .row .col6:nth-of-type(2) .row {
+		flex-direction: column;
+	}
+	.meet .row .col6:nth-of-type(2) .col6 .meet__content {
+		left: 0;
+		bottom: 1px;
+		right: 0;
+		width: 95%;
+		text-align: center;
+	}
+	.meet .row .col6:nth-of-type(1) .meet__content {
+		width: 100%;
+		bottom: 30px;
+	}
+	.explore .explore__cards h2 {
+		font-size: 2.8rem;
+	}
+}
+@media (max-width: 575px) {
+	.d-block {
+		display: block;
+	}
+	.d-flex {
+		display: flex;
+	}
+	.d-none {
+		display: none;
+	}
+	.nav .nav__center,
+	.nav .bottom__mobile__nav {
+		border-top: 1px solid rgb(221, 221, 221) !important;
+	}
+	.nav .nav__center .sub__nav .active-tab,
+	.nav .bottom__mobile__nav .sub__nav .active-tab {
+		/* color: var(--airbnb-color);
+		fill: var(--airbnb-color); */
+		color: #ff385c;
+		fill: #ff385c;
+	}
+	.bottom__mobile__nav a svg {
+		width: 20px;
+		height: 20px;
+	}
+	.bottom__mobile__nav a i,
+	.bottom__mobile__nav a svg path {
+		/* color: var(--body-color); */
+		color: #484848;
+	}
+	.explore .popular__places .col4 {
+		max-width: 40%;
+		flex: 0 0 40%;
+	}
+	.explore .explore__card .col4 {
+		max-width: 48%;
+		flex: 0 0 48%;
+	}
+	footer .row:nth-of-type(1) {
+		padding-bottom: 0;
+	}
+	footer .container-fluid {
+		padding: 4rem;
+	}
+	footer .copyright__text {
+		max-width: 60%;
+		flex: 0 0 60%;
+		text-align: center;
+	}
+	footer .social__icons {
+		max-width: 40%;
+		flex: 0 0 40%;
+	}
+	.nav .bottom__mobile__nav {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		/* background-color: var(--white); */
+		background-color: #ffffff;
+		padding: 2rem;
+		height: 70px;
+	}
+	/* .show__nav {
+		display: block;
+	} */
+	.hide__nav {
+		display: none;
+	}
+	.container-fluid {
+		padding: 3rem;
+	}
+	.card__section .row .col3,
+	.card__section .row .col4 {
+		flex: 0 0 75%;
+		max-width: 75%;
+		margin-bottom: 1rem;
+	}
+	.meet {
+		position: relative;
+	}
+	.meet .meet__header + .row {
+		flex-direction: column;
+	}
+	.meet .meet__header + .row .col6:nth-of-type(1) img {
+		width: 100%;
+		margin-bottom: 1.5rem;
+	}
+	.meet img,
+	.meet .meet__header + .row .col6:nth-of-type(2) img {
+		width: fit-content;
+		margin-bottom: 1.5rem;
+	}
+	.meet .row .col6 {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.meet .meet__content div {
+		font-size: 1.3rem;
+	}
+	.meet .row .col6:nth-of-type(2) .col6 .meet__content {
+		bottom: 3.8rem;
+	}
+	.meet .row .col6:nth-of-type(1) .meet__content,
+	.meet .row .col6:nth-of-type(2) .col12 .meet__content {
+		bottom: 2.6rem;
+	}
+	.meet .meet__header button {
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+	}
+	.places .container-fluid .col3 {
+		max-width: 45%;
+		flex: 0 0 45%;
+	}
+}
+@media (max-width: 480px) {
+	footer .row:nth-of-type(2) {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer .copyright__text,
+	.card__section .row .col4 {
+		margin-bottom: 1rem;
+	}
+	footer .copyright__text,
+	footer .social__icons {
+		max-width: 100%;
+		flex: 0 0 100%;
+	}
+	.card__section .row .col4 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+	.meet img,
+	.meet .meet__header + .row .col6:nth-of-type(2) img {
+		width: 100%;
+	}
+	.meet .row .col6:nth-of-type(1) .meet__content {
+		bottom: 26px;
+		left: 5px;
+	}
+	.places .container-fluid .col3 {
+		max-width: 75%;
+		flex: 0 0 75%;
+	}
+	.explore .explore__card .col4 {
+		max-width: 65%;
+		flex: 0 0 65%;
+	}
+	.explore .popular__places .col4 {
+		max-width: 68%;
+		flex: 0 0 68%;
+	}
+}
+@media (max-width: 320px) {
+	.meet .row .col6:nth-of-type(2) .col6 .meet__content {
+		bottom: 22px;
+	}
+	.explore .explore__card .col4 {
+		max-width: 70%;
+		flex: 0 0 70%;
+	}
+}
