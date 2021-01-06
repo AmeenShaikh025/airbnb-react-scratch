@@ -11,7 +11,7 @@ import Stays from './Stays'
 const Home = () => {
     return (
         <>
-            <Header />
+            <Header page="home" />
             <Banner />
             <Places />
             <Stays />

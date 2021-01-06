@@ -1,10 +1,16 @@
 import React from 'react'
 
+import Footer from './Footer'
+import Header from './Header'
+import PlacesNearBy from './PlacesNearBy'
+
 const Explore = () => {
     return (
-        <div>
-            <h2>Explore page</h2>
-        </div>
+        <>
+            <Header page="explore" />
+            <PlacesNearBy />
+            <Footer />
+        </>
     )
 }
 
