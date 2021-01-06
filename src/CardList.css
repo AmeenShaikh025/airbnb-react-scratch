@@ -1,0 +1,15 @@
+/* Live anywhere */
+.card__section h2 {
+	font-size: 3rem;
+	/* color: var(--text-color); */
+	color: rgb(27, 27, 27);
+	margin: 1.6rem 0;
+}
+.card__section .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-between;
+}
+
+/* Live anywhere */
