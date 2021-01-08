@@ -1,8 +1,9 @@
 import React from 'react'
 
-import Footer from './Footer'
-import Header from './Header'
-import PlacesNearBy from './PlacesNearBy'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import PlacesNearBy from '../components/PlacesNearBy'
+import "../Responsive.css"
 
 const Explore = () => {
     return (

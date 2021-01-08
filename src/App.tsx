@@ -1,12 +1,11 @@
 import React , {Suspense, lazy} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import LoadingScreen from './LoadingScreen';
-// const banner =  require("./assets/banner.jpg")
+import LoadingScreen from './screens/LoadingScreen';
 
-const Home = lazy(() => import("./Home"));
-const Explore = lazy(() => import("./Explore"));
-const NotFound = lazy(() => import("./NotFound"));
+const Home = lazy(() => import("./screens/Home"));
+const Explore = lazy(() => import("./screens/Explore"));
+const NotFound = lazy(() => import("./screens/NotFound"));
 
 const App = () =>  {
     return (

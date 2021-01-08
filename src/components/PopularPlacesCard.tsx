@@ -1,9 +1,9 @@
 import React from 'react'
 
-import johorJpg from "./assets/img/explore/popular_place.jpg";
-import johorWebp from "./assets/img/explore/popular_place.webp";
-import singaporeJpg from "./assets/img/explore/popular_place2.jpg";
-import singaporeWebp from "./assets/img/explore/popular_place2.webp";
+import johorJpg from "../assets/img/explore/popular_place.jpg";
+import johorWebp from "../assets/img/explore/popular_place.webp";
+import singaporeJpg from "../assets/img/explore/popular_place2.jpg";
+import singaporeWebp from "../assets/img/explore/popular_place2.webp";
 
 interface PlaceDetails {
     placeName: string

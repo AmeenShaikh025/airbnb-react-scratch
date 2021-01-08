@@ -3,17 +3,13 @@ import React, { useState, useEffect } from 'react'
 let source = '';
 
 function iFrame(src: string) {
-    // console.log('map url',src)
     source = source + src;
-    console.log('src is',source)
     return {__html: iFrameURL};
 }
 
 
 const iFrameURL = `<iframe title="map" src="${source}" name="map" id="map" loading="lazy" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>`;
 
-console.log('outside ',source)
-console.log(iFrameURL);
 
 function MapArea() {
     

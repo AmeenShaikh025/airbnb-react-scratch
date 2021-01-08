@@ -11,16 +11,11 @@ function ExploreStays() {
             <div className="col7 explore__cards">
                 <PlacesFilter />
 
-                {/* First Place */}
                     <PlaceListHeader placeName="Bengaluru" />    
                     <PlaceList />
-                {/* First Place */}
 
-                
-                {/* Second Place */}
                     <PlaceListHeader  placeName="Kuala Lumpur" />    
                     <PlaceList />
-                {/* Second Place */}
 
                 <PopularPlaces />             
             </div> 

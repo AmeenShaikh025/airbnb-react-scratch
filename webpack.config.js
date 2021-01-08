@@ -69,16 +69,6 @@ module.exports = {
     plugins: pluginConfig,
     module: {
         rules: [
-            // { 
-            //     test: /\.(js)$/i, 
-            //     exclude: /(node_modules|bower_components)/,
-            //     use: {
-            //        loader: 'babel-loader',
-            //        options: {
-            //            presets: ['@babel/preset-env']
-            //        }
-            //     }
-            // },
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
@@ -91,12 +81,6 @@ module.exports = {
             {
                 test: /\.html$/i,
                 use: ['html-loader']
-                // use: {
-                //     loader: "file-loader",
-                //     options: {
-                //         name: '[name].[ext]'
-                //     }
-                // }
             },
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg|ttf|webp)$/i,
@@ -125,10 +109,5 @@ module.exports = {
       },
       devServer: {
         historyApiFallback: true,
-      },
-    //   devServer: {
-    //     contentBase: path.join(__dirname, 'build'),
-    //     compress: true,
-    //     port: 9000
-    //   },
+      }
 }
