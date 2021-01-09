@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { Link, useHistory } from "react-router-dom";
+import { throttle } from 'lodash';
 
 import "./Header.css"
 
@@ -44,8 +45,11 @@ const Header = (props: pageName) => {
     useEffect(() => {
         let lastScroll = 0, scrolledDistance = 0;
         
-        window.onscroll = () => {
+        window
+            .addEventListener('scroll', throttle(callback, 300, { trailing: true, leading: true }));
             
+        function callback() {
+
             let currentScroll = window.pageYOffset;
 
             //run the code if the page is home page
@@ -90,7 +94,7 @@ const Header = (props: pageName) => {
                     bottomNav.current.style.transform = "translateY(100px)"
                 }
             }
-        }
+        } 
     }, []);
 
     return (
