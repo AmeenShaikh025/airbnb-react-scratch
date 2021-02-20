@@ -1,0 +1,79 @@
+# Modify this code to update the DB schema diagram.
+# To reset the sample schema, replace everything with
+# two dots ('..' - without quotes).
+
+Customer
+-
+CustomerId PK int
+Name string INDEX
+Password varchar
+CustomerLocation varchar
+CreatedAt timestamp
+
+
+Places
+-
+PlaceId PK int
+PlaceName string INDEX
+PlaceImg varchar
+Location varchar
+Duration int
+CustomerLocation varchar FK >- Customer.CustomerLocation
+CreatedAt timestamp
+
+
+StayType
+-
+StayTypeId PK int
+StayTypeName varchar
+StayTypeImg varchar
+
+
+OnlineExperience
+-
+OnlineExperienceId PK int
+OnlineExperienceName varchar
+OnlineExperienceImg varchar
+
+
+Hosts
+-
+HostID PK int 
+HostName varchar
+HostImg varchar
+
+
+StayLocation
+-
+StayLocationId PK int
+StayLocationImg varchar
+StayLocationName varchar
+PlaceId int FK >- Places.PlaceId
+PlaceType Boolean
+Price int
+Facilities varchar
+Ratings int
+Address varchar
+
+
+CustomerReview
+-
+CustomerId int FK >- Customer.CustomerId
+CustomerImg varchar
+Review varchar
+Ratings int
+StayLocationName varchar
+CreatedAt timestamp
+
+CustomerMap
+-
+Mapid PK int
+StayLocationId int FK >- StayLocation.StayLocationId
+CustomerLocation varchar FK >- Customer.CustomerLocation
+
+
+Destinations
+-
+DestinationId int PK
+DestinationImg varchar
+
