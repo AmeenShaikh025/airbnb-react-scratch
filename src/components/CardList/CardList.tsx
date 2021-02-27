@@ -7,7 +7,7 @@ interface CardDetails {
     cardFor: string
 }
 
-import Card from './Card';
+import Card from '../Card/Card';
 import "./CardList.css";
 
 function Stays(props: CardDetails) {

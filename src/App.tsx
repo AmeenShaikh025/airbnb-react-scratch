@@ -21,9 +21,5 @@ const App = () =>  {
     )
 }
 
-export default App
+export default App;
 
-
-// export function sum(a:number, b:number): number {
-//     return a + b;
-// }

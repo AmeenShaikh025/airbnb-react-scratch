@@ -1,7 +1,7 @@
 import React from 'react'
-import PopularPlacesCard from './PopularPlacesCard'
+import PopularPlacesCard from '../PopularPlacesCard/PopularPlacesCard'
 
-import PopularPlacesHeader from './PopularPlacesHeader'
+import PopularPlacesHeader from '../PopularPlacesHeader/PopularPlacesHeader'
 
 function PopularPlaces() {
     return (

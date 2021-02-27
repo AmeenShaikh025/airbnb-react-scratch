@@ -1,9 +1,9 @@
 import React from 'react'
 
-import PlacesFilter from './PlacesFilter'
-import PlaceList from './PlaceList'
-import PlaceListHeader from './PlaceListHeader'
-import PopularPlaces from './PopularPlaces'
+import PlacesFilter from '../PlaceFilter/PlacesFilter'
+import PlaceList from '../PlaceList/PlaceList'
+import PlaceListHeader from '../PlaceListHeader/PlaceListHeader'
+import PopularPlaces from '../PopularPlaces/PopularPlaces'
 
 function ExploreStays() {
     return (

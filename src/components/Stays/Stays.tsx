@@ -1,8 +1,8 @@
 import React from 'react'
 
-import CardList from './CardList'
-import ImageJpg from "../assets/img/home/unique_stays.jpg";
-import ImageWebp from "../assets/img/home/unique_stays.webp";
+import CardList from '../CardList/CardList'
+import ImageJpg from "../../assets/img/home/unique_stays.jpg";
+import ImageWebp from "../../assets/img/home/unique_stays.webp";
 
 function Stays() {
     return (

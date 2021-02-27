@@ -7,14 +7,14 @@ interface CardDetails {
 
 import "./Card.css"
 
-function StayCard(props: CardDetails) {
+function Card({ImageWebp, ImageJpg}: CardDetails) {
     return (
         <>
-            <div className="col3">
+            <div title="card" className="col3">
                 {/* <img data-src="./img/home/unique_stays.webp" type="image/webp" className="lazyload" width="100%" height="auto" alt="Unique stays" /> */}
                 <picture>
-                    <source srcSet={props.ImageWebp} type="image/webp" />
-                    <img data-src={props.ImageJpg} className="lazyload" width="100%" height="auto" alt="Unique stays"/>
+                    <source srcSet={ImageWebp} type="image/webp" />
+                    <img data-src={ImageJpg} className="lazyload" width="100%" height="auto" alt="Unique stays"/>
                 </picture>
                 <h4>Unique stays</h4>
             </div>
@@ -22,4 +22,4 @@ function StayCard(props: CardDetails) {
     )
 }
 
-export default StayCard
+export default Card

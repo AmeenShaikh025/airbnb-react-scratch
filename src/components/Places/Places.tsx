@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Place from './Place';
+import Place from '../Place/Place';
 import "./Places.css";
-import gokarnaJpg from "../assets/img/home/gokarna.jpg";
-import gokarnaWebp from "../assets/img/home/gokarna.webp";
+import gokarnaJpg from "../../assets/img/home/gokarna.jpg";
+import gokarnaWebp from "../../assets/img/home/gokarna.webp";
 
 
 function Places() {

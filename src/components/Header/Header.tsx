@@ -41,7 +41,7 @@ const Header = (props: pageName) => {
         }
     }
 
-    // handle scroll wvwnt when DOM is loaded initially
+    // handle scroll event when DOM is loaded initially
     useEffect(() => {
         let lastScroll = 0, scrolledDistance = 0;
         

@@ -1,8 +1,8 @@
 import React from 'react'
-import PlaceListCardDetails from './PlaceListCardDetails'
+import PlaceListCardDetails from '../PlaceListCardDetails/PlaceListCardDetails'
 
-import PlaceListCardImage from './PlaceListCardImage'
-import PlaceListHeader from './PlaceListHeader'
+import PlaceListCardImage from '../PlaceListCardImage/PlaceListCardImage'
+import PlaceListHeader from '../PlaceListHeader/PlaceListHeader'
 
 function PlaceListCard() {
     return (

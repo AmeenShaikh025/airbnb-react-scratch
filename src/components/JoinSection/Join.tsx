@@ -1,8 +1,8 @@
 import React from 'react'
 
-import CardList from './CardList'
-import ImageJpg from "../assets/img/home/live.jpg";
-import ImageWebp from "../assets/img/home/live.webp";
+import CardList from '../CardList/CardList'
+import ImageJpg from "../../assets/img/home/live.jpg";
+import ImageWebp from "../../assets/img/home/live.webp";
 
 function Join() {
     return (

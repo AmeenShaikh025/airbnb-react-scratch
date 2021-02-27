@@ -1,7 +1,7 @@
 import React from 'react'
 
-import roomJpg from "../assets/img/explore/room.jpg";
-import roomWebp from "../assets/img/explore/room.webp";
+import roomJpg from "../../assets/img/explore/room.jpg";
+import roomWebp from "../../assets/img/explore/room.webp";
 
 interface placeListImg {
     superHost: Boolean

@@ -1,11 +1,11 @@
 import React from 'react'
 
 import "./Meet.css"
-import ImageJpg from "../assets/img/home/live.jpg";
-import MeetOne from "../assets/img/home/meet1.webp";
-import MeetTwo from "../assets/img/home/meet2.webp";
-import MeetThree from "../assets/img/home/meet3.webp";
-import MeetFour from "../assets/img/home/meet4.webp";
+import ImageJpg from "../../assets/img/home/live.jpg";
+import MeetOne from "../../assets/img/home/meet1.webp";
+import MeetTwo from "../../assets/img/home/meet2.webp";
+import MeetThree from "../../assets/img/home/meet3.webp";
+import MeetFour from "../../assets/img/home/meet4.webp";
 
 function Meet() {
     return (

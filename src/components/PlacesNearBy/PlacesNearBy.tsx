@@ -1,7 +1,7 @@
 import React from 'react'
 
-import MapArea from './MapArea'
-import ExploreStays from './ExploreStays'
+import MapArea from '../MapArea/MapArea'
+import ExploreStays from '../ExploreStays/ExploreStays'
 import "./PlacesNearBy.css"
 
 function PlacesNearBy() {
