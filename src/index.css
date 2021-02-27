@@ -153,3 +153,35 @@ body::-webkit-scrollbar,
 	display: block;
 }
 /* Common styles */
+
+/* Card css */
+
+.col3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 0 1rem;
+}
+.col3:hover,
+.col4:hover {
+	cursor: pointer;
+}
+.col3 img {
+	border-radius: 1.2rem;
+	width: 100%;
+	object-fit: contain;
+}
+.col4 {
+	padding: 0 1rem;
+}
+.col4 img {
+	border-radius: 1.2rem;
+	width: 100%;
+	object-fit: contain;
+}
+.col3 h4,
+.col4 h4 {
+	font-size: 1.8rem;
+	margin-top: 0.3rem;
+}
+
+/* Card css */
