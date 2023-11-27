@@ -41,7 +41,7 @@
     "webpack-merge": "^5.7.0"
   },
   "dependencies": {
-    "@lhci/server": "^0.6.1",
+    "@lhci/server": "^0.11.0",
     "@types/node": "^14.14.14",
     "@types/react-dom": "^17.0.0",
     "clean-webpack-plugin": "^3.0.0",
